@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
@@ -64,9 +65,10 @@ header#Header nav .navbar_list {
     position: absolute;
     top: 0;
     pointer-events: none;
-    background: rgba(255, 255, 255, 0.05);
+    background: #222;
     width: 100%;
     padding: 20px;
+    box-shadow: 2px 2px 5px #fff;
   }
   header#Header nav .navbar_list .navbar_list_action {
     display: block;
@@ -122,6 +124,171 @@ header#Header nav #btn_toggle_check:checked ~ .navbar_list {
   pointer-events: visible;
   visibility: visible;
   z-index: 100;
+}
+
+section {
+  color: #fff;
+}
+section .container_size {
+  background: rgba(255, 255, 255, 0.1);
+}
+section h2 {
+  border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+section .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 30px;
+}
+@media (max-width: 700px) {
+  section .grid-container {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+    padding: 0;
+  }
+}
+section .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
+}
+section .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+section .lookbook-gallery .a11y-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+section .lookbook-gallery .a11y-only.focusable:active,
+section .lookbook-gallery .a11y-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+section .lookbook-gallery img {
+  min-width: 10em;
+  max-width: 100%;
+  display: block;
+  background: #ddd;
+}
+section .lookbook-gallery .model {
+  margin: 0;
+  position: relative;
+}
+section .lookbook-gallery .model .model--caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 0.35em 1.2em 0.25em 0.9em;
+  justify-self: start;
+}
+section .lookbook-gallery .model .model--caption .model-hed {
+  font-size: 1.25em;
+  margin: 0.5em 0;
+  font-family: Lora, serif;
+}
+section .lookbook-gallery .model .model--caption .model-hed a {
+  color: #fff;
+  text-decoration-color: rgba(255, 255, 255, 0.5);
+}
+section .lookbook-gallery .model .model--caption p {
+  font-size: 0.9375em;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.5;
+  margin: 0 0 0.5em 0;
+}
+@media (min-width: 45em) {
+  section .lookbook-gallery .lookbook-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section .lookbook-gallery .model {
+    flex: 47.5%;
+    margin: 0.5%;
+  }
+}
+@media (min-width: 65em) {
+  section .lookbook-gallery .model {
+    flex: 24.25% 0;
+    margin: 0.25%;
+  }
+  @supports (display: grid) {
+    section .lookbook-gallery .lookbook-grid {
+      display: grid;
+      grid-gap: 0.5em;
+      grid-template-columns: repeat(4, minmax(200px, 1fr));
+    }
+    section .lookbook-gallery .model {
+      margin: 0;
+    }
+    section .lookbook-gallery .model:nth-of-type(4n-1) {
+      grid-row-end: span 2;
+      grid-column-end: span 2;
+    }
+  }
+}
+section .slogans_content {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-gap: 10px;
+}
+section .slogans_content blockquote {
+  font-size: 1.4em;
+  font-style: italic;
+  color: #555555;
+  padding: 30px;
+  border-left: 8px solid #78C0A8;
+  line-height: 1.6;
+  position: relative;
+  background: #EDEDED;
+}
+@media (max-width: 700px) {
+  section .slogans_content blockquote {
+    padding: 10px;
+    margin: 0px;
+    font-size: 1em;
+  }
+}
+section .slogans_content blockquote::before {
+  font-family: Arial;
+  content: "“";
+  color: #78C0A8;
+  font-size: 4em;
+  position: absolute;
+  left: -5px;
+  top: -10px;
+}
+section .slogans_content blockquote::after {
+  content: "";
+}
+section .slogans_content blockquote span {
+  display: block;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 1em;
 }
 
 footer#Footer {
