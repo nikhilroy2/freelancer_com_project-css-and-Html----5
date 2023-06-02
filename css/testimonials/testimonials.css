@@ -125,6 +125,138 @@ header#Header nav #btn_toggle_check:checked ~ .navbar_list {
   z-index: 100;
 }
 
+main section .testimonials_wrapper {
+  margin-top: 50px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  flex-wrap: nowrap;
+  grid-gap: 15px;
+}
+main section .testimonials_wrapper .testimonial {
+  border: 1px solid rgba(92, 92, 92, 0.576);
+  padding: 20px;
+  border-radius: 15px;
+}
+main section .testimonials_wrapper .testimonial .testimonials_user {
+  text-align: center;
+}
+main section .testimonials_wrapper .testimonial .testimonials_user img {
+  display: block;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 8px;
+}
+main section .testimonials_wrapper .testimonial blockquote {
+  font-style: italic;
+  color: #ccc;
+  margin: 0;
+  padding: 0;
+}
+main section .testimonials_wrapper .testimonial-rating {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+  margin: auto;
+  margin-top: 5px;
+  width: 150px;
+}
+main section .testimonials_wrapper .testimonial-rating span {
+  color: #888;
+  margin-right: 5px;
+  font-size: 25px;
+}
+main section .testimonials_wrapper .testimonial-rating .star {
+  color: #fdd835;
+}
+main section .lookbook-gallery .a11y-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+main section .lookbook-gallery .a11y-only.focusable:active,
+main section .lookbook-gallery .a11y-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+main section .lookbook-gallery img {
+  min-width: 10em;
+  max-width: 100%;
+  display: block;
+  background: #ddd;
+}
+main section .lookbook-gallery .model {
+  margin: 0;
+  position: relative;
+}
+main section .lookbook-gallery .model .model--caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 0.35em 1.2em 0.25em 0.9em;
+  justify-self: start;
+}
+main section .lookbook-gallery .model .model--caption .model-hed {
+  font-size: 1.25em;
+  margin: 0.5em 0;
+  font-family: Lora, serif;
+}
+main section .lookbook-gallery .model .model--caption .model-hed a {
+  color: #fff;
+  text-decoration-color: rgba(255, 255, 255, 0.5);
+}
+main section .lookbook-gallery .model .model--caption p {
+  font-size: 0.9375em;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.5;
+  margin: 0 0 0.5em 0;
+}
+@media (min-width: 45em) {
+  main section .lookbook-gallery .lookbook-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main section .lookbook-gallery .model {
+    flex: 47.5%;
+    margin: 0.5%;
+  }
+}
+@media (min-width: 65em) {
+  main section .lookbook-gallery .model {
+    flex: 24.25% 0;
+    margin: 0.25%;
+  }
+  @supports (display: grid) {
+    main section .lookbook-gallery .lookbook-grid {
+      display: grid;
+      grid-gap: 0.5em;
+      grid-template-columns: repeat(4, minmax(200px, 1fr));
+    }
+    main section .lookbook-gallery .model {
+      margin: 0;
+    }
+    main section .lookbook-gallery .model:nth-of-type(4n-1) {
+      grid-row-end: span 2;
+      grid-column-end: span 2;
+    }
+  }
+}
+
 footer#Footer {
   margin-top: 100px;
   padding-top: 15px;
