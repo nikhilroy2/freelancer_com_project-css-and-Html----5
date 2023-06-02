@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #000;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container_size {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1200px) {
+  .container_size {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+header#Header {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0;
+  padding: 15px 0;
+  font-size: 18px;
+}
+header#Header nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  align-items: center;
+  text-transform: uppercase;
+  position: relative;
+}
+header#Header nav .navbar_list {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  transition: 0.1s ease-in-out;
+  width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 700px) {
+  header#Header nav .navbar_list {
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    background: #222;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 2px 2px 5px #fff;
+  }
+  header#Header nav .navbar_list .navbar_list_action {
+    display: block;
+    width: 100%;
+  }
+}
+header#Header nav .navbar_list .navbar_list_action {
+  padding: 3px 10px;
+  border-radius: 15px;
+  white-space: nowrap;
+  text-align: center;
+  transition: 0.3s;
+}
+header#Header nav .navbar_list .navbar_list_action:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+header#Header nav .navbar_list .navbar_list_action.active {
+  background: #fff;
+  color: #000;
+}
+header#Header nav .btn_toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  place-self: end;
+}
+@media (max-width: 700px) {
+  header#Header nav .btn_toggle {
+    display: block;
+  }
+}
+header#Header nav .btn_toggle svg {
+  fill: #fff;
+}
+header#Header nav .btn_toggle .bi-x-lg {
+  display: none;
+}
+header#Header nav #btn_toggle_check {
+  display: none;
+}
+header#Header nav #btn_toggle_check:checked ~ .btn_toggle .bi-list {
+  display: none;
+}
+header#Header nav #btn_toggle_check:checked ~ .btn_toggle .bi-x-lg {
+  display: inline-block;
+}
+header#Header nav #btn_toggle_check:checked ~ .navbar_list {
+  opacity: 1;
+  top: calc(100% + 18px);
+  pointer-events: visible;
+  visibility: visible;
+  z-index: 100;
+}
+
+footer#Footer {
+  margin-top: 100px;
+  padding-top: 15px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.1);
+}
+footer#Footer .logo {
+  text-transform: uppercase;
+}
+footer#Footer .footer_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 50px;
+}
+@media (max-width: 700px) {
+  footer#Footer .footer_wrapper {
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 10px;
+  }
+}
+footer#Footer .footer_wrapper .footer_list li:not(.not_dics) {
+  list-style: disc;
+  color: #fff;
+  list-style-position: inside;
+  padding-left: 25px;
+}
+footer#Footer .footer_wrapper .footer_list .list_title {
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #333;
+}
+footer#Footer .reserve_txt {
+  text-align: center;
+  font-size: 18px;
+  color: rgba(238, 238, 238, 0.541);
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  margin-top: 50px;
+}/*# sourceMappingURL=testimonials.css.map */
