@@ -1,133 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Now</title>
+    <!-- fontawesome cdn -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
     <!-- bootstrap cdn -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css' integrity='sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==' crossorigin='anonymous'/>
-    <link rel="stylesheet" href="./css/blog/blog.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+      integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/buy_now/buy_now.css" />
+  </head>
+  <body>
     <header id="Header">
-        <nav class="container_size">
-          <a href="#" class="logo"> Logo </a>
-  
-          <input type="checkbox" name="btn_toggle_check" id="btn_toggle_check" />
-          <label for="btn_toggle_check" class="btn_toggle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              class="bi bi-list"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-              />
-            </svg>
-  
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              class="bi bi-x-lg"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-              />
-            </svg>
-          </label>
-  
-          <ul class="navbar_list">
-            <li class="navbar_list_item">
-              <a href="#" class="navbar_list_action active">Home</a>
-            </li>
-            <li class="navbar_list_item">
-              <a href="#" class="navbar_list_action">Blog</a>
-            </li>
-            <li class="navbar_list_item">
-              <a href="#" class="navbar_list_action">Testimonials</a>
-            </li>
-            <li class="navbar_list_item">
-              <a href="#" class="navbar_list_action">Comparison</a>
-            </li>
-            <li class="navbar_list_item">
-              <a href="#" class="navbar_list_action">Buy Now</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <nav class="container_size">
+        <a href="#" class="logo"> Logo </a>
 
-    <main>
-        <section></section>
-        <section></section>
-        <section></section>
+        <input type="checkbox" name="btn_toggle_check" id="btn_toggle_check" />
+        <label for="btn_toggle_check" class="btn_toggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
+        </label>
+
+        <ul class="navbar_list">
+          <li class="navbar_list_item">
+            <a href="#" class="navbar_list_action active">Home</a>
+          </li>
+          <li class="navbar_list_item">
+            <a href="#" class="navbar_list_action">Blog</a>
+          </li>
+          <li class="navbar_list_item">
+            <a href="#" class="navbar_list_action">Testimonials</a>
+          </li>
+          <li class="navbar_list_item">
+            <a href="#" class="navbar_list_action">Comparison</a>
+          </li>
+          <li class="navbar_list_item">
+            <a href="#" class="navbar_list_action">Buy Now</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main_buy_now">
+      <section class=" py-3 py-md-5">
+        <div class="container_size">
+          <div class="row">
+            <div class="col-md-3">
+              <section class="panel mb-3">
+                  <div class="panel-body p-3">
+                      <input type="text" placeholder="Keyword Search" class="form-control" />
+                  </div>
+              </section>
+              <section class="panel">
+                  <header class="panel-heading p-3">
+                      Category
+                  </header>
+                  <div class="panel-body">
+                      <ul class="list-group prod-cat">
+                          <li class="list-group-item">
+                              <a href="#" class="active"><i class="fa fa-angle-right"></i> Dress</a>
+                              <ul class="nav">
+                                  <li class="active"><a href="#">- Shirt</a></li>
+                                  <li><a href="#">- Pant</a></li>
+                                  <li><a href="#">- Shoes</a></li>
+                              </ul>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#"><i class="fa fa-angle-right"></i> Bags &amp; Purses</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#"><i class="fa fa-angle-right"></i> Beauty</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#"><i class="fa fa-angle-right"></i> Coat &amp; Jacket</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#"><i class="fa fa-angle-right"></i> Jeans</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#"><i class="fa fa-angle-right"></i> Jewellery</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#"><i class="fa fa-angle-right"></i> Electronics</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#"><i class="fa fa-angle-right"></i> Sports</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#"><i class="fa fa-angle-right"></i> Technology</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#"><i class="fa fa-angle-right"></i> Watches</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#"><i class="fa fa-angle-right"></i> Accessories</a>
+                          </li>
+                      </ul>
+                  </div>
+              </section>
+              <section class="panel p-3 border-bottom">
+                  <header class="panel-heading ">
+                      Price Range
+                  </header>
+                  <div class="panel-body sliders">
+                      <div id="slider-range" class="slider"></div>
+                      <div class="slider-info">
+                          <span id="slider-range-amount"></span>
+                      </div>
+                  </div>
+              </section>
+              <section class="panel mb-3">
+                  <header class="panel-heading p-3 border-bottom">
+                      Filter
+                  </header>
+                  <div class="panel-body p-3">
+                      <form role="form product-form">
+                          <div class="form-group mb-3">
+                              <label>Brand</label>
+                              <select class="form-control hasCustomSelect" style="-webkit-appearance: menulist-button; width: 231px; position: absolute; opacity: 0; height: 34px; font-size: 12px;">
+                                  <option>Wallmart</option>
+                                  <option>Catseye</option>
+                                  <option>Moonsoon</option>
+                                  <option>Textmart</option>
+                              </select>
+                              <span class="customSelect form-control" style="display: inline-block;"><span class="customSelectInner" style="width: 209px; display: inline-block;">Wallmart</span></span>
+                          </div>
+                          <div class="form-group mb-3">
+                              <label>Color</label>
+                              <select class="form-control hasCustomSelect" style="-webkit-appearance: menulist-button; width: 231px; position: absolute; opacity: 0; height: 34px; font-size: 12px;">
+                                  <option>White</option>
+                                  <option>Black</option>
+                                  <option>Red</option>
+                                  <option>Green</option>
+                              </select>
+                              <span class="customSelect form-control" style="display: inline-block;"><span class="customSelectInner" style="width: 209px; display: inline-block;">White</span></span>
+                          </div>
+                          <div class="form-group mb-3">
+                              <label>Type</label>
+                              <select class="form-control hasCustomSelect" style="-webkit-appearance: menulist-button; width: 231px; position: absolute; opacity: 0; height: 34px; font-size: 12px;">
+                                  <option>Small</option>
+                                  <option>Medium</option>
+                                  <option>Large</option>
+                                  <option>Extra Large</option>
+                              </select>
+                              <span class="customSelect form-control" style="display: inline-block;"><span class="customSelectInner" style="width: 209px; display: inline-block;">Small</span></span>
+                          </div>
+                          <button class="btn btn-primary" type="submit">Filter</button>
+                      </form>
+                  </div>
+              </section>
+              
+          </div>
+          <div class="col-md-9">
+              <section class="panel mb-3 p-2 text-end">
+                  <div class="panel-body">
+                      <div class="">
+                        <ul class="pagination justify-content-end">
+                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                      </div>
+                  </div>
+              </section>
+      
+              <div class="row product-list">
+                  <div class="col-md-4">
+                      <section class="panel">
+                          <div class="pro-img-box">
+                              <img src="https://www.bootdey.com/image/250x220/FFB6C1/000000" alt="" />
+                              <a href="#" class="adtocart">
+                                  <i class="fa fa-shopping-cart"></i>
+                              </a>
+                          </div>
+      
+                          <div class="panel-body text-center">
+                              <h4>
+                                  <a href="#" class="pro-title">
+                                      Leopard Shirt Dress
+                                  </a>
+                              </h4>
+                              <p class="price">$300.00</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-md-4">
+                      <section class="panel">
+                          <div class="pro-img-box">
+                              <img src="https://www.bootdey.com/image/250x220/6495ED/000000" alt="" />
+                              <a href="#" class="adtocart">
+                                  <i class="fa fa-shopping-cart"></i>
+                              </a>
+                          </div>
+      
+                          <div class="panel-body text-center">
+                              <h4>
+                                  <a href="#" class="pro-title">
+                                      Leopard Shirt Dress
+                                  </a>
+                              </h4>
+                              <p class="price">$300.00</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-md-4">
+                      <section class="panel">
+                          <div class="pro-img-box">
+                              <img src="https://www.bootdey.com/image/250x220/FF7F50/000000" alt="" />
+                              <a href="#" class="adtocart">
+                                  <i class="fa fa-shopping-cart"></i>
+                              </a>
+                          </div>
+      
+                          <div class="panel-body text-center">
+                              <h4>
+                                  <a href="#" class="pro-title">
+                                      Leopard Shirt Dress
+                                  </a>
+                              </h4>
+                              <p class="price">$300.00</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-md-4">
+                      <section class="panel">
+                          <div class="pro-img-box">
+                              <img src="https://www.bootdey.com/image/250x220/00BFFF/000000" alt="" />
+                              <a href="#" class="adtocart">
+                                  <i class="fa fa-shopping-cart"></i>
+                              </a>
+                          </div>
+      
+                          <div class="panel-body text-center">
+                              <h4>
+                                  <a href="#" class="pro-title">
+                                      Leopard Shirt Dress
+                                  </a>
+                              </h4>
+                              <p class="price">$300.00</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-md-4">
+                      <section class="panel">
+                          <div class="pro-img-box">
+                              <img src="https://www.bootdey.com/image/250x220/00CED1/000000" alt="" />
+                              <a href="#" class="adtocart">
+                                  <i class="fa fa-shopping-cart"></i>
+                              </a>
+                          </div>
+      
+                          <div class="panel-body text-center">
+                              <h4>
+                                  <a href="#" class="pro-title">
+                                      Leopard Shirt Dress
+                                  </a>
+                              </h4>
+                              <p class="price">$300.00</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-md-4">
+                      <section class="panel">
+                          <div class="pro-img-box">
+                              <img src="https://www.bootdey.com/image/250x220/9400D3/000000" alt="" />
+                              <a href="#" class="adtocart">
+                                  <i class="fa fa-shopping-cart"></i>
+                              </a>
+                          </div>
+      
+                          <div class="panel-body text-center">
+                              <h4>
+                                  <a href="#" class="pro-title">
+                                      Leopard Shirt Dress
+                                  </a>
+                              </h4>
+                              <p class="price">$300.00</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-md-4">
+                      <section class="panel">
+                          <div class="pro-img-box">
+                              <img src="https://www.bootdey.com/image/250x220/FFD700/000000" alt="" />
+                              <a href="#" class="adtocart">
+                                  <i class="fa fa-shopping-cart"></i>
+                              </a>
+                          </div>
+      
+                          <div class="panel-body text-center">
+                              <h4>
+                                  <a href="#" class="pro-title">
+                                      Leopard Shirt Dress
+                                  </a>
+                              </h4>
+                              <p class="price">$300.00</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-md-4">
+                      <section class="panel">
+                          <div class="pro-img-box">
+                              <img src="https://www.bootdey.com/image/250x220/ADD8E6/000000" alt="" />
+                              <a href="#" class="adtocart">
+                                  <i class="fa fa-shopping-cart"></i>
+                              </a>
+                          </div>
+      
+                          <div class="panel-body text-center">
+                              <h4>
+                                  <a href="#" class="pro-title">
+                                      Leopard Shirt Dress
+                                  </a>
+                              </h4>
+                              <p class="price">$300.00</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-md-4">
+                      <section class="panel">
+                          <div class="pro-img-box">
+                              <img src="https://www.bootdey.com/image/250x220/20B2AA/000000" alt="" />
+                              <a href="#" class="adtocart">
+                                  <i class="fa fa-shopping-cart"></i>
+                              </a>
+                          </div>
+      
+                          <div class="panel-body text-center">
+                              <h4>
+                                  <a href="#" class="pro-title">
+                                      Leopard Shirt Dress
+                                  </a>
+                              </h4>
+                              <p class="price">$300.00</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-md-4">
+                      <section class="panel">
+                          <div class="pro-img-box">
+                              <img src="https://www.bootdey.com/image/250x220/3CB371/000000" alt="" />
+                              <a href="#" class="adtocart">
+                                  <i class="fa fa-shopping-cart"></i>
+                              </a>
+                          </div>
+      
+                          <div class="panel-body text-center">
+                              <h4>
+                                  <a href="#" class="pro-title">
+                                      Leopard Shirt Dress
+                                  </a>
+                              </h4>
+                              <p class="price">$300.00</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-md-4">
+                      <section class="panel">
+                          <div class="pro-img-box">
+                              <img src="https://www.bootdey.com/image/250x220/FFB6C1/000000" alt="" />
+                              <a href="#" class="adtocart">
+                                  <i class="fa fa-shopping-cart"></i>
+                              </a>
+                          </div>
+      
+                          <div class="panel-body text-center">
+                              <h4>
+                                  <a href="#" class="pro-title">
+                                      Leopard Shirt Dress
+                                  </a>
+                              </h4>
+                              <p class="price">$300.00</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-md-4">
+                      <section class="panel">
+                          <div class="pro-img-box">
+                              <img src="https://www.bootdey.com/image/250x220/C71585/000000" alt="" />
+                              <a href="#" class="adtocart">
+                                  <i class="fa fa-shopping-cart"></i>
+                              </a>
+                          </div>
+      
+                          <div class="panel-body text-center">
+                              <h4>
+                                  <a href="#" class="pro-title">
+                                      Leopard Shirt Dress
+                                  </a>
+                              </h4>
+                              <p class="price">$300.00</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-md-4">
+                      <section class="panel">
+                          <div class="pro-img-box">
+                              <img src="https://www.bootdey.com/image/250x220/191970/000000" alt="" />
+                              <a href="#" class="adtocart">
+                                  <i class="fa fa-shopping-cart"></i>
+                              </a>
+                          </div>
+      
+                          <div class="panel-body text-center">
+                              <h4>
+                                  <a href="#" class="pro-title">
+                                      Leopard Shirt Dress
+                                  </a>
+                              </h4>
+                              <p class="price">$300.00</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-md-4">
+                      <section class="panel">
+                          <div class="pro-img-box">
+                              <img src="https://www.bootdey.com/image/250x220/87CEEB/000000" alt="" />
+                              <a href="#" class="adtocart">
+                                  <i class="fa fa-shopping-cart"></i>
+                              </a>
+                          </div>
+      
+                          <div class="panel-body text-center">
+                              <h4>
+                                  <a href="#" class="pro-title">
+                                      Leopard Shirt Dress
+                                  </a>
+                              </h4>
+                              <p class="price">$300.00</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-md-4">
+                      <section class="panel">
+                          <div class="pro-img-box">
+                              <img src="https://www.bootdey.com/image/250x220/FFB6C1/000000" alt="" />
+                              <a href="#" class="adtocart">
+                                  <i class="fa fa-shopping-cart"></i>
+                              </a>
+                          </div>
+      
+                          <div class="panel-body text-center">
+                              <h4>
+                                  <a href="#" class="pro-title">
+                                      Leopard Shirt Dress
+                                  </a>
+                              </h4>
+                              <p class="price">$300.00</p>
+                          </div>
+                      </section>
+                  </div>
+              </div>
+          </div>
+          </div>
+      </div>
+      </section>
     </main>
     <footer id="Footer">
-        <div class="container_size">
-          <div class="footer_wrapper">
-            <ul class="footer_list">
-              <li class="not_dics">
-                <h3 class="list_title">Shortcut</h3>
-              </li>
-              <li>
-                <a href="#"> Home </a>
-              </li>
-              <li>
-                <a href="#"> Blog </a>
-              </li>
-              <li>
-                <a href="#"> Comparison </a>
-              </li>
-              <li>
-                <a href="#"> Buy Now </a>
-              </li>
-              <li>
-                <a href="#"> Home </a>
-              </li>
-            </ul>
-  
-            <ul class="footer_list">
-              <li class="not_dics">
-                <h3 class="list_title">Social</h3>
-              </li>
-              <li>
-                <a href="#"> Facebook </a>
-              </li>
-              <li>
-                <a href="#"> Youtube </a>
-              </li>
-              <li>
-                <a href="#"> Instagram </a>
-              </li>
-              <li>
-                <a href="#">Linkedin </a>
-              </li>
-            </ul>
-  
-            <ul class="footer_list">
-              <li class="not_dics">
-                <h3 class="list_title">OUR COMMUNITY</h3>
-              </li>
-              <li>
-                <a href="#"> Community </a>
-              </li>
-              <li>
-                <a href="#"> Blog </a>
-              </li>
-              <li>
-                <a href="#"> Forums </a>
-              </li>
-            </ul>
-          </div>
+      <div class="container_size">
+        <div class="footer_wrapper">
+          <ul class="footer_list">
+            <li class="not_dics">
+              <h3 class="list_title">Shortcut</h3>
+            </li>
+            <li>
+              <a href="#"> Home </a>
+            </li>
+            <li>
+              <a href="#"> Blog </a>
+            </li>
+            <li>
+              <a href="#"> Comparison </a>
+            </li>
+            <li>
+              <a href="#"> Buy Now </a>
+            </li>
+            <li>
+              <a href="#"> Home </a>
+            </li>
+          </ul>
+
+          <ul class="footer_list">
+            <li class="not_dics">
+              <h3 class="list_title">Social</h3>
+            </li>
+            <li>
+              <a href="#"> Facebook </a>
+            </li>
+            <li>
+              <a href="#"> Youtube </a>
+            </li>
+            <li>
+              <a href="#"> Instagram </a>
+            </li>
+            <li>
+              <a href="#">Linkedin </a>
+            </li>
+          </ul>
+
+          <ul class="footer_list">
+            <li class="not_dics">
+              <h3 class="list_title">OUR COMMUNITY</h3>
+            </li>
+            <li>
+              <a href="#"> Community </a>
+            </li>
+            <li>
+              <a href="#"> Blog </a>
+            </li>
+            <li>
+              <a href="#"> Forums </a>
+            </li>
+          </ul>
         </div>
-        <div class="reserve_txt">All rights reserved.</div>
-      </footer>
-</body>
+      </div>
+      <div class="reserve_txt">All rights reserved.</div>
+    </footer>
+  </body>
 </html>
