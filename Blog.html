@@ -1,133 +1,580 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Page</title>
+    <!-- fontawesome icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
     <!-- bootstrap cdn -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css' integrity='sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==' crossorigin='anonymous'/>
-    <link rel="stylesheet" href="./css/blog/blog.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+      integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/blog/blog.css" />
+  </head>
+  <body>
     <header id="Header">
-        <nav class="container_size">
-          <a href="#" class="logo"> Logo </a>
-  
-          <input type="checkbox" name="btn_toggle_check" id="btn_toggle_check" />
-          <label for="btn_toggle_check" class="btn_toggle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              class="bi bi-list"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-              />
-            </svg>
-  
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              class="bi bi-x-lg"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-              />
-            </svg>
-          </label>
-  
-          <ul class="navbar_list">
-            <li class="navbar_list_item">
-              <a href="#" class="navbar_list_action active">Home</a>
-            </li>
-            <li class="navbar_list_item">
-              <a href="#" class="navbar_list_action">Blog</a>
-            </li>
-            <li class="navbar_list_item">
-              <a href="#" class="navbar_list_action">Testimonials</a>
-            </li>
-            <li class="navbar_list_item">
-              <a href="#" class="navbar_list_action">Comparison</a>
-            </li>
-            <li class="navbar_list_item">
-              <a href="#" class="navbar_list_action">Buy Now</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <nav class="container_size">
+        <a href="#" class="logo"> Logo </a>
 
-    <main>
-        <section></section>
-        <section></section>
-        <section></section>
-    </main>
-    <footer id="Footer">
+        <input type="checkbox" name="btn_toggle_check" id="btn_toggle_check" />
+        <label for="btn_toggle_check" class="btn_toggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
+        </label>
+
+        <ul class="navbar_list">
+          <li class="navbar_list_item">
+            <a href="#" class="navbar_list_action active">Home</a>
+          </li>
+          <li class="navbar_list_item">
+            <a href="#" class="navbar_list_action">Blog</a>
+          </li>
+          <li class="navbar_list_item">
+            <a href="#" class="navbar_list_action">Testimonials</a>
+          </li>
+          <li class="navbar_list_item">
+            <a href="#" class="navbar_list_action">Comparison</a>
+          </li>
+          <li class="navbar_list_item">
+            <a href="#" class="navbar_list_action">Buy Now</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main_blog">
+      <section class="blog-listing gray-bg">
         <div class="container_size">
-          <div class="footer_wrapper">
-            <ul class="footer_list">
-              <li class="not_dics">
-                <h3 class="list_title">Shortcut</h3>
-              </li>
-              <li>
-                <a href="#"> Home </a>
-              </li>
-              <li>
-                <a href="#"> Blog </a>
-              </li>
-              <li>
-                <a href="#"> Comparison </a>
-              </li>
-              <li>
-                <a href="#"> Buy Now </a>
-              </li>
-              <li>
-                <a href="#"> Home </a>
-              </li>
-            </ul>
-  
-            <ul class="footer_list">
-              <li class="not_dics">
-                <h3 class="list_title">Social</h3>
-              </li>
-              <li>
-                <a href="#"> Facebook </a>
-              </li>
-              <li>
-                <a href="#"> Youtube </a>
-              </li>
-              <li>
-                <a href="#"> Instagram </a>
-              </li>
-              <li>
-                <a href="#">Linkedin </a>
-              </li>
-            </ul>
-  
-            <ul class="footer_list">
-              <li class="not_dics">
-                <h3 class="list_title">OUR COMMUNITY</h3>
-              </li>
-              <li>
-                <a href="#"> Community </a>
-              </li>
-              <li>
-                <a href="#"> Blog </a>
-              </li>
-              <li>
-                <a href="#"> Forums </a>
-              </li>
-            </ul>
+          <div class="row">
+            <div class="col-12">
+              <div class="box categories">
+                <ul class="list-unstyled d-flex justify-content-end">
+                  <li>
+                    <a href="#" class=" m-2 ms-0 btn btn-primary"><i class=" me-1 fa fa-female"></i>Fashion</a>
+                  </li>
+                  <li>
+                    <a href="#" class=" m-2 btn btn-dark"><i class=" me-1 fa fa-paint-brush"></i>Design</a>
+                  </li>
+                  <li>
+                    <a href="#" class=" m-2 btn btn-dark"><i class=" me-1 fa fa-music"></i>Music</a>
+                  </li>
+                  <li>
+                    <a href="#" class=" m-2 btn btn-dark"><i class=" me-1 fa fa-plane"></i>Travel</a>
+                  </li>
+                  <li>
+                    <a href="#" class=" m-2 btn btn-dark"><i class=" me-1 fa fa-hashtag"></i>Uncategorized</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-start">
+            <div class="col-lg-8 m-15px-tb">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="blog-grid">
+                    <div class="blog-img">
+                      <div class="date">
+                        <span>04</span>
+                        <label>FEB</label>
+                      </div>
+                      <a href="#">
+                        <img
+                          src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                          title=""
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="blog-info">
+                      <h5>
+                        <a href="#"
+                          >Boost Your Sales with Our Revolutionary Product!</a
+                        >
+                      </h5>
+                      <p>
+                        Discover the ultimate solution to skyrocket your sales
+                        and transform your business. Our revolutionary product
+                        is designed to deliver exceptional results, increase
+                        customer engagement, and drive revenue growth. Don't
+                        miss out on this game-changing opportunity. Unlock your
+                        sales potential today!
+                      </p>
+                      <div class="btn-bar">
+                        <a href="#" class="px-btn-arrow">
+                          <span>Read More</span>
+                          <i class="arrow"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="blog-grid">
+                    <div class="blog-img">
+                      <div class="date">
+                        <span>04</span>
+                        <label>FEB</label>
+                      </div>
+                      <a href="#">
+                        <img
+                          src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                          title=""
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="blog-info">
+                      <h5>
+                        <a href="#"
+                          >"Unleash Sales Success: Introducing Our
+                          High-Performance Product!"</a
+                        >
+                      </h5>
+                      <p>
+                        Experience a sales transformation like never before. Our
+                        high-performance product is meticulously crafted to
+                        optimize your sales process, amplify conversions, and
+                        exceed targets. Elevate your business to new heights of
+                        success with our cutting-edge solution. Embrace the
+                        power of sales excellence!
+                      </p>
+                      <div class="btn-bar">
+                        <a href="#" class="px-btn-arrow">
+                          <span>Read More</span>
+                          <i class="arrow"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="blog-grid">
+                    <div class="blog-img">
+                      <div class="date">
+                        <span>04</span>
+                        <label>FEB</label>
+                      </div>
+                      <a href="#">
+                        <img
+                          src="https://images.unsplash.com/photo-1553456558-aff63285bdd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                          title=""
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="blog-info">
+                      <h5>
+                        <a href="#"
+                          >Ignite Your Sales Strategy: Introducing Our Dynamic
+                          Product!</a
+                        >
+                      </h5>
+                      <p>
+                        Revitalize your sales strategy with our dynamic product.
+                        Seamlessly integrate advanced features and unleash
+                        unparalleled sales growth. Achieve remarkable results,
+                        forge lasting customer relationships, and stay ahead of
+                        the competition. It's time to ignite your sales
+                        potential!
+                      </p>
+                      <div class="btn-bar">
+                        <a href="#" class="px-btn-arrow">
+                          <span>Read More</span>
+                          <i class="arrow"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="blog-grid">
+                    <div class="blog-img">
+                      <div class="date">
+                        <span>04</span>
+                        <label>FEB</label>
+                      </div>
+                      <a href="#">
+                        <img
+                          src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                          title=""
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="blog-info">
+                      <h5>
+                        <a href="#"
+                          >Supercharge Your Sales: Discover Our Proven
+                          Product!</a
+                        >
+                      </h5>
+                      <p>
+                        Empower your sales team and achieve extraordinary
+                        results with our proven product. Streamline your sales
+                        process, accelerate conversions, and generate
+                        substantial revenue. Unleash the power of sales success
+                        and witness remarkable growth. Elevate your business to
+                        new heights!
+                      </p>
+                      <div class="btn-bar">
+                        <a href="#" class="px-btn-arrow">
+                          <span>Read More</span>
+                          <i class="arrow"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="blog-grid">
+                    <div class="blog-img">
+                      <div class="date">
+                        <span>04</span>
+                        <label>FEB</label>
+                      </div>
+                      <a href="#">
+                        <img
+                          src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                          title=""
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="blog-info">
+                      <h5>
+                        <a href="#"
+                          >Accelerate Your Sales Momentum: Introducing Our
+                          Turbocharged Product!</a
+                        >
+                      </h5>
+                      <p>
+                        Rev up your sales engine with our turbocharged product.
+                        Ignite rapid growth, seize opportunities, and outpace
+                        the competition. Experience the exhilaration of
+                        skyrocketing sales and propel your business to new
+                        horizons. Buckle up for an exciting journey!
+                      </p>
+                      <div class="btn-bar">
+                        <a href="#" class="px-btn-arrow">
+                          <span>Read More</span>
+                          <i class="arrow"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="blog-grid">
+                    <div class="blog-img">
+                      <div class="date">
+                        <span>04</span>
+                        <label>FEB</label>
+                      </div>
+                      <a href="#">
+                        <img
+                          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                          title=""
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="blog-info">
+                      <h5>
+                        <a href="#"
+                          >Maximize Your Sales Impact: Discover Our
+                          Results-Driven Product!</a
+                        >
+                      </h5>
+                      <p>
+                        Unleash the power of our results-driven product to
+                        maximize your sales impact. Harness advanced analytics,
+                        automation, and persuasive features to drive conversions
+                        and revenue. Join the league of sales leaders and become
+                        a force to be reckoned with in your industry!
+                      </p>
+                      <div class="btn-bar">
+                        <a href="#" class="px-btn-arrow">
+                          <span>Read More</span>
+                          <i class="arrow"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1"
+                        ><i class="fas fa-chevron-left"></i
+                      ></a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item active">
+                      <a class="page-link" href="#"
+                        >2 <span class="sr-only">(current)</span></a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#"
+                        ><i class="fas fa-chevron-right"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 m-15px-tb blog-aside">
+              <!-- Author -->
+              <div class="widget widget-author">
+                <div class="widget-title">
+                  <h3>Author</h3>
+                </div>
+                <div class="widget-body">
+                  <div
+                    class="media align-items-center text-center justify-content-center"
+                  >
+                    <div class="avatar mx-auto">
+                      <img
+                        src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        title=""
+                        alt=""
+                      />
+                    </div>
+                    <div class="media-body mt-3">
+                      <h6>
+                        Hello, I'm<br />
+                        Rachel Roth
+                      </h6>
+                    </div>
+                  </div>
+                  <p>
+                    I design and develop services for customers of all sizes,
+                    specializing in creating stylish, modern websites, web
+                    services and online stores
+                  </p>
+                </div>
+              </div>
+              <!-- End Author -->
+
+              <!-- Trending Post -->
+              <div class="widget widget-post">
+                <div class="widget-title">
+                  <h3>Trending Now</h3>
+                </div>
+                <div class="widget-body"></div>
+              </div>
+              <!-- End Trending Post -->
+
+              <!-- Latest Post -->
+              <div class="widget widget-latest-post">
+                <div class="widget-title">
+                  <h3>Latest Post</h3>
+                </div>
+                <div class="widget-body">
+                  <div class="latest-post-aside media">
+                    <div class="lpa-left media-body">
+                      <div class="lpa-title">
+                        <h5>
+                          <a href="#"
+                            >Unleash Sales Excellence: Introducing Our
+                            Game-Changing Product!</a
+                          >
+                        </h5>
+                      </div>
+                      <div class="lpa-meta">
+                        <a class="name" href="#"> Rachel Roth </a>
+                        <a class="date" href="#"> 26 FEB 2020 </a>
+                      </div>
+                    </div>
+                    <div class="lpa-right">
+                      <a href="#">
+                        <img
+                          src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                          title=""
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="latest-post-aside media">
+                    <div class="lpa-left media-body">
+                      <div class="lpa-title">
+                        <h5>
+                          <a href="#"
+                            >Maximize Your Sales Impact: Discover Our
+                            Results-Driven Product!</a
+                          >
+                        </h5>
+                      </div>
+                      <div class="lpa-meta">
+                        <a class="name" href="#"> Rachel Roth </a>
+                        <a class="date" href="#"> 26 FEB 2020 </a>
+                      </div>
+                    </div>
+                    <div class="lpa-right">
+                      <a href="#">
+                        <img
+                          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                          title=""
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="latest-post-aside media">
+                    <div class="lpa-left media-body">
+                      <div class="lpa-title">
+                        <h5>
+                          <a href="#"
+                            >Ignite Your Sales Strategy: Introducing Our Dynamic
+                            Product!</a
+                          >
+                        </h5>
+                      </div>
+                      <div class="lpa-meta">
+                        <a class="name" href="#"> Rachel Roth </a>
+                        <a class="date" href="#"> 26 FEB 2020 </a>
+                      </div>
+                    </div>
+                    <div class="lpa-right">
+                      <a href="#">
+                        <img
+                          src="https://images.unsplash.com/photo-1553456558-aff63285bdd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                          title=""
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Latest Post -->
+
+              <!-- widget Tags -->
+              <div class="widget widget-tags">
+                <div class="widget-title">
+                  <h3>Latest Tags</h3>
+                </div>
+                <div class="widget-body">
+                  <div class="nav tag-cloud">
+                    <a href="#">Design</a>
+                    <a href="#">Development</a>
+                    <a href="#">Travel</a>
+                    <a href="#">Web Design</a>
+                    <a href="#">Marketing</a>
+                    <a href="#">Research</a>
+                    <a href="#">Managment</a>
+                  </div>
+                </div>
+              </div>
+              <!-- End widget Tags -->
+            </div>
           </div>
         </div>
-        <div class="reserve_txt">All rights reserved.</div>
-      </footer>
-</body>
+      </section>
+    </main>
+    <footer id="Footer">
+      <div class="container_size">
+        <div class="footer_wrapper">
+          <ul class="footer_list">
+            <li class="not_dics">
+              <h3 class="list_title">Shortcut</h3>
+            </li>
+            <li>
+              <a href="#"> Home </a>
+            </li>
+            <li>
+              <a href="#"> Blog </a>
+            </li>
+            <li>
+              <a href="#"> Comparison </a>
+            </li>
+            <li>
+              <a href="#"> Buy Now </a>
+            </li>
+            <li>
+              <a href="#"> Home </a>
+            </li>
+          </ul>
+
+          <ul class="footer_list">
+            <li class="not_dics">
+              <h3 class="list_title">Social</h3>
+            </li>
+            <li>
+              <a href="#"> Facebook </a>
+            </li>
+            <li>
+              <a href="#"> Youtube </a>
+            </li>
+            <li>
+              <a href="#"> Instagram </a>
+            </li>
+            <li>
+              <a href="#">Linkedin </a>
+            </li>
+          </ul>
+
+          <ul class="footer_list">
+            <li class="not_dics">
+              <h3 class="list_title">OUR COMMUNITY</h3>
+            </li>
+            <li>
+              <a href="#"> Community </a>
+            </li>
+            <li>
+              <a href="#"> Blog </a>
+            </li>
+            <li>
+              <a href="#"> Forums </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="reserve_txt">All rights reserved.</div>
+    </footer>
+  </body>
 </html>
